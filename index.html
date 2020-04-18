@@ -1,0 +1,53 @@
+<html>
+<meta name="viewport"
+  content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<body>
+
+  <div id="str">
+
+  </div>
+
+  <div id="iproud">
+
+  </div>
+
+  <div id="iproud3">
+
+  </div>
+
+  <div id="wechat">
+
+  </div>
+  
+</body>
+<script>
+    window.onload = () =>{ 
+      var ele = document.getElementById('str');
+      ele.innerText = JSON.stringify(navigator.userAgent) 
+
+
+      var iproud = document.getElementById('iproud');
+      iproud.innerText = '是否在员宝中:' + is_iproud();
+
+      var iproud3 = document.getElementById('iproud3');
+      iproud3.innerText = '是否在员宝V3中:' + is_iproud3();
+
+      var wechat = document.getElementById('wechat');
+      wechat.innerText = '是否在微信中:' + is_wechat();
+    }  
+
+    function is_wechat(){
+      return /MicroMessenger/i.test(navigator.userAgent)
+    }
+
+    function is_iproud(){
+      return /app\/iproud/i.test(navigator.userAgent)
+    }
+
+    function is_iproud3(){
+      return /app\/iproud_v3/i.test(navigator.userAgent)
+    }
+    
+  </script>
+</html>
