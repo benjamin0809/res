@@ -720,8 +720,8 @@ html[dir='rtl'] #sidebarResizer {
 #toolbarContainer, .findbar, .secondaryToolbar {
   position: relative;
   height: 32px;
-  /* background-color: #474747; // fallback 
-  background-image: url(images/texture.png),
+  background-color: #474747; 
+  /** background-image: url(images/texture.png),
                     -webkit-gradient(linear, left top, left bottom, from(hsla(0,0%,32%,.99)), to(hsla(0,0%,27%,.95)));
   background-image: url(images/texture.png),
                     linear-gradient(hsla(0,0%,32%,.99), hsla(0,0%,27%,.95)); */
